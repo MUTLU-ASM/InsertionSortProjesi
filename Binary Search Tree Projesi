@@ -1,0 +1,33 @@
+#Binary Search Tree Projesi
+
+---
+
+#[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını yazınız.
+
+Örnek: root x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+
+---
+ilk değerimiz 7 ve kök olarak seçilir. root 7'dir.root'un sağından 8 bulunur. Solunda 5 bulunur.
+
+- 7>5 bu sebeple sola yazılacak.
+- 7>5>1 bu sebeple sola yazılacak.
+- 7<8 bu sebeple 7 nin sağ tarafına yazılacak.
+- 7>5>3 ama 1<3 bu sebeple 1'in sağına yazılacak.
+- 7>6 ama 5<6 bu sebeple 5'in sağına yazılacak.
+- 7>5>1>0 bu sebeple 1'in soluna yazılacak.
+- 7<8<9 bu sebeple 8'in sağına yazılacak.
+- 7>5>1<4 1'in kolundaki 3<4 bu sebeple 3'ün sağına yazılacak.
+- 7>5>1<2 1'in kolundaki 3>2 bu sebeple 3'ün soluna yazılacak.
+---
+| | | | | | | 7| | | | |  
+|--|--|- |- |- |- |- |- |- |- |- |
+| | | | | | /| |\ | | | |
+| | | | | 5| | | |8 | | |
+| | | | /| |\ | | | |\ | |
+| | |1 | | | |6 | | | | 9|
+| | /| |\ | | | | | | | |
+| 0| | | | 3| | | | | | |
+| | | | /| |\ | | | | | |
+| | | 2| | | |4 | | | | |
+
+www.patika.dev
